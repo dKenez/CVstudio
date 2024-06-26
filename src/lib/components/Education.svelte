@@ -37,7 +37,7 @@
 			country="Hungary"
 			city="Budapest"
 			description={[
-				'Bachelors education focusing on Mechanical, Electrical, and Control Engineering',
+				"Bachelor's education focusing on Mechanical, Electrical, and Control Engineering",
 				'Specialized in Cyberphysical Systems and Robotics',
 				'Thesis project: Implementing Additive Manufacturing Processes in Digital Twin Systems'
 			]}
