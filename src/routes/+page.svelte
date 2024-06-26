@@ -24,17 +24,19 @@
 </script>
 
 <div class="bg-slate-600 min-h-screen min-w-screen p-10 flex justify-center backdrop">
-	<div class="flex flex-col gap-12">
-		<!-- <button on:click={generatePDF}>Generate PDF</button> -->
-		<div class="page bg-white px-12 py-12" id="page-1" bind:this={content}>
-			<Header />
-			<Skills />
-			<Experience />
-		</div>
-		<div class="page bg-white px-12 py-12" id="page-2">
-			<Education />
-			<ProjectsAndAchievements />
-			<Contact />
+	<!-- <button on:click={generatePDF}>Generate PDF</button> -->
+	<div class="page-wrapper">
+		<div class="pages">
+			<div class="page bg-white px-12 py-12 mb-12" id="page-1" bind:this={content}>
+				<Header />
+				<Skills />
+				<Experience />
+			</div>
+			<div class="page bg-white px-12 py-12" id="page-2">
+				<Education />
+				<ProjectsAndAchievements />
+				<Contact />
+			</div>
 		</div>
 	</div>
 </div>
@@ -46,6 +48,49 @@
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 		display: flex;
 		flex-direction: column;
+	}
+
+	.pages {
+		transform-origin: top;
+		height: fit-content;
+		height: fit-content;
+	}
+
+	.page-wrapper {
+        display: flex;
+		justify-content: center;
+		align-items: center;
+        width: 100%;
+		height: fit-content;
+		/* height: 100vh; */
+		/* overflow: hidden; */
+	}
+	/* Smaller devices */
+	@media (max-width: 599px) {
+		.pages {
+			transform: scale(0.5);
+		}
+	}
+
+	/* Medium devices */
+	@media (min-width: 600px) and (max-width: 767px) {
+		.pages {
+			transform: scale(0.7);
+		}
+	}
+
+	/* Tablets */
+	@media (min-width: 768px) and (max-width: 991px) {
+		.pages {
+			transform: scale(0.85);
+		}
+	}
+
+	/* Desktops */
+	@media (min-width: 992px) {
+		.pages {
+			transform: scale(1);
+		}
 	}
 
 	.backdrop {
