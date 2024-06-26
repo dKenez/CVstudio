@@ -1,33 +1,32 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import Contact from '$lib/components/Contact.svelte';
 	import Education from '$lib/components/Education.svelte';
 	import Experience from '$lib/components/Experience.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import ProjectsAndAchievements from '$lib/components/ProjectsAndAchievements.svelte';
 	import Skills from '$lib/components/Skills.svelte';
-	// import html2pdf from 'html2pdf.js';
 
-	let content;
+	let pageWrapper: HTMLDivElement;
+	let pages: HTMLDivElement;
 
-	// function generatePDF() {
-	// 	const element = content; // The HTML element you want to convert to PDF
-	// 	const opt = {
-	// 		margin: 1,
-	// 		filename: 'mydocument.pdf',
-	// 		image: { type: 'jpeg', quality: 0.98 },
-	// 		html2canvas: { scale: 2 },
-	// 		jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-	// 	};
+	function updateWrapperHeight() {
+		const scale = getComputedStyle(pages).getPropertyValue('transform');
+		const matrix = new DOMMatrixReadOnly(scale);
+		const scaledHeight = pages.offsetHeight * matrix.a; // matrix.a is the scale factor
+		pageWrapper.style.height = `${scaledHeight}px`;
+	}
 
-	// 	html2pdf().set(opt).from(element).save();
-	// }
+	onMount(() => {
+		updateWrapperHeight();
+		window.addEventListener('resize', updateWrapperHeight);
+	});
 </script>
 
 <div class="bg-slate-600 min-h-screen min-w-screen p-10 flex justify-center backdrop">
-	<!-- <button on:click={generatePDF}>Generate PDF</button> -->
-	<div class="page-wrapper">
-		<div class="pages">
-			<div class="page bg-white px-12 py-12 mb-12" id="page-1" bind:this={content}>
+	<div class="page-wrapper" bind:this={pageWrapper}>
+		<div class="pages" bind:this={pages}>
+			<div class="page bg-white px-12 py-12 mb-12" id="page-1">
 				<Header />
 				<Skills />
 				<Experience />
@@ -51,20 +50,17 @@
 	}
 
 	.pages {
-		transform-origin: top;
-		height: fit-content;
-		height: fit-content;
+		transform-origin: center;
 	}
 
 	.page-wrapper {
-        display: flex;
+		display: flex;
 		justify-content: center;
 		align-items: center;
-        width: 100%;
-		height: fit-content;
-		/* height: 100vh; */
-		/* overflow: hidden; */
+		width: 100%;
+        height: fit-content;
 	}
+
 	/* Smaller devices */
 	@media (max-width: 599px) {
 		.pages {
@@ -98,5 +94,8 @@
 		background-image: radial-gradient(#94a3b8, 1px, transparent 1px);
 		background-size: 40px 40px;
 		background-attachment: fixed;
+		width: 100vw;
+		height: 100vh;
+		overflow: scroll;
 	}
 </style>
