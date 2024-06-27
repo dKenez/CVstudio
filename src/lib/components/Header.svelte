@@ -1,5 +1,5 @@
 <script>
-	import CVPhoto from '$lib/assets/CVPhoto.webp';
+	import CVPhoto from '$lib/assets/CVPhotoSMOL.webp';
 </script>
 
 <div class="flex justify-between items-center">

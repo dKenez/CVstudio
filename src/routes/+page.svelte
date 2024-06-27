@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 	import Contact from '$lib/components/Contact.svelte';
 	import Education from '$lib/components/Education.svelte';
 	import Experience from '$lib/components/Experience.svelte';
@@ -17,9 +17,23 @@
 		pageWrapper.style.height = `${scaledHeight}px`;
 	}
 
+	function downloadPDF() {
+		const pdfUrl = '/KKD_CV_2024jun27.pdf'; // Path to your PDF file in the public directory
+		const link = document.createElement('a');
+		link.href = pdfUrl;
+		link.download = 'resume.pdf'; // Name for the downloaded file
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
+	}
+
 	onMount(() => {
 		updateWrapperHeight();
 		window.addEventListener('resize', updateWrapperHeight);
+
+		return () => {
+			window.removeEventListener('resize', updateWrapperHeight);
+		};
 	});
 </script>
 
@@ -31,12 +45,25 @@
 				<Skills />
 				<Experience />
 			</div>
-			<div class="page bg-white px-12 py-12" id="page-2">
+			<div class="page bg-white px-12 py-12 mb-10" id="page-2">
 				<Education />
 				<ProjectsAndAchievements />
 				<Contact />
 			</div>
 		</div>
+	</div>
+	<!-- Floating Buttons -->
+	<div class="floating-buttons fixed flex gap-4">
+		<button
+			class="rounded-lg bg-stone-200 px-4 py-2 shadow-md shadow-slate-800/50 ring-2 ring-blue-500 ring-offset-2 ring-offset-slate-600 hover:shadow-xl hover:ring-blue-400 transition ease-in-out duration-300"
+			><a href="https://www.dkenez.dk">Return to <span class="text-blue-500">www.dkenez.dk</span></a
+			></button
+		>
+		<button
+			on:click={downloadPDF}
+			class="rounded-lg bg-stone-200 px-4 py-2 shadow-md shadow-slate-800/50 ring-2 ring-blue-500 ring-offset-2 ring-offset-slate-600 hover:shadow-xl hover:ring-blue-400 transition ease-in-out duration-300"
+			>Download PDF</button
+		>
 	</div>
 </div>
 
@@ -58,7 +85,41 @@
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-        height: fit-content;
+		height: fit-content;
+	}
+
+	@media (min-width: 1301px) {
+		.floating-buttons {
+			position: fixed;
+			right: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+			flex-direction: column;
+		}
+	}
+	@media (max-width: 1300px) {
+		.floating-buttons {
+			position: fixed;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			flex-direction: row;
+		}
+	}
+
+	.download-button {
+		background-color: #1d4ed8;
+		color: white;
+		border: none;
+		padding: 10px 20px;
+		border-radius: 5px;
+		cursor: pointer;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: background-color 0.3s;
+	}
+
+	.download-button:hover {
+		background-color: #2563eb;
 	}
 
 	/* Smaller devices */
