@@ -14,30 +14,30 @@
 			<div class="border-b-2 border-slate-200 flex-1"></div>
 		</div>
 
-		<div >
+		<div>
 			<div class="flex justify-around">
 				<div class="flex items-center gap-2">
 					<EnvelopeSolid class="h-8 aspect-square text-[#2094f1]" />
-					<p class="text-sm">k.k.drexler@gmail.com</p>
+					<a href="mailto:k.k.drexler@gmail.com" class="text-sm">k.k.drexler@gmail.com</a>
 				</div>
 				<div class="flex items-center gap-2">
 					<PhoneSolid class="h-8 aspect-square text-[#2094f1]" />
-					<p class="text-sm">+45 911 01679</p>
+					<a href="tel:+4591101679" class="text-sm">+45 911 01679</a>
 				</div>
 			</div>
 			<div class="flex justify-around">
 				<div class="flex items-center gap-2">
 					<LinkedinSolid class="h-8 aspect-square text-[#2094f1]" />
-					<p class="text-sm">linkedin.com/in/kkdrexler</p>
+					<a href="https://www.linkedin.com/in/kkdrexler" class="text-sm">/in/kkdrexler</a>
 				</div>
 				<div class="flex items-center gap-2">
 					<GithubSolid class="h-8 aspect-square text-[#2094f1]" />
-					<p class="text-sm">github.com/dKenez</p>
+					<a href="https://www.github.com/dKenez" class="text-sm">/dKenez</a>
 				</div>
-				<!-- <div class="flex items-center gap-2">
-					<DribbbleSolid class="h-8 aspect-square" />
-					<p>k.k.drexler@gmail.com</p>
-				</div> -->
+				<div class="flex items-center gap-2">
+					<DribbbleSolid class="h-8 aspect-square text-[#2094f1]" />
+					<a href="https://www.dkenez.dk" class="text-sm">www.dkenez.dk</a>
+				</div>
 			</div>
 		</div>
 	</div>
