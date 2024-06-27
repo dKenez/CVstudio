@@ -55,13 +55,13 @@
 	<!-- Floating Buttons -->
 	<div class="floating-buttons fixed flex gap-4">
 		<button
-			class="rounded-lg bg-stone-200 px-4 py-2 shadow-md shadow-slate-800/50 ring-2 ring-blue-500 ring-offset-2 ring-offset-slate-600 hover:shadow-xl hover:ring-blue-400 transition ease-in-out duration-300"
+			class="text-xs sm:text-sm md:text-base rounded-lg bg-stone-200 px-4 py-2 shadow-md shadow-slate-800/50 ring-2 ring-blue-500 ring-offset-2 ring-offset-slate-600 hover:shadow-xl hover:ring-blue-400 transition ease-in-out duration-300"
 			><a href="https://www.dkenez.dk">Return to <span class="text-blue-500">www.dkenez.dk</span></a
 			></button
 		>
 		<button
 			on:click={downloadPDF}
-			class="rounded-lg bg-stone-200 px-4 py-2 shadow-md shadow-slate-800/50 ring-2 ring-blue-500 ring-offset-2 ring-offset-slate-600 hover:shadow-xl hover:ring-blue-400 transition ease-in-out duration-300"
+			class="text-xs sm:text-sm md:text-base rounded-lg bg-stone-200 px-4 py-2 shadow-md shadow-slate-800/50 ring-2 ring-blue-500 ring-offset-2 ring-offset-slate-600 hover:shadow-xl hover:ring-blue-400 transition ease-in-out duration-300"
 			>Download PDF</button
 		>
 	</div>
@@ -101,8 +101,8 @@
 		.floating-buttons {
 			position: fixed;
 			bottom: 20px;
-			left: 50%;
-			transform: translateX(-50%);
+			width: 100%;
+			justify-content: center;
 			flex-direction: row;
 		}
 	}
@@ -123,7 +123,14 @@
 	}
 
 	/* Smaller devices */
-	@media (max-width: 599px) {
+	@media (max-width: 419px) {
+		.pages {
+			transform: scale(0.4);
+		}
+	}
+
+	/* Smaller devices */
+	@media (min-width: 420px) and (max-width: 599px) {
 		.pages {
 			transform: scale(0.5);
 		}
