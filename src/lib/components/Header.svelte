@@ -6,10 +6,10 @@
 	<div class="border-slate-600 aspect-square rounded-full border-2 flex p-1">
 		<div class="bg-slate-400 aspect-square rounded-full h-[120px]"></div>
 	</div>
-	<div class="text-right">
+	<div class="text-right flex flex-col">
 		<p class="text-2xl">Kristof K. <b>Drexler</b></p>
 		<p class="text-lg">MSc. Autonomous Systems</p>
-		<p class="text-sm font-thin">k.k.drexler@gmail.com</p>
-		<p class="text-sm font-thin">+45 911 01679</p>
+		<a class="text-sm font-thin" href="mailto:k.k.drexler@gmail.com">k.k.drexler@gmail.com</a>
+		<a class="text-sm font-thin" href="tel:+4591101679">+45 911 01679</a>
 	</div>
 </div>
