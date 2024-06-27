@@ -1,10 +1,11 @@
 <script>
-	// Add your script logic here
+	import CVPhoto from '$lib/assets/CVPhoto.webp';
 </script>
 
-<div class="flex justify-between items-center mb-8">
+<div class="flex justify-between items-center">
 	<div class="border-slate-600 aspect-square rounded-full border-2 flex p-1">
-		<div class="bg-slate-400 aspect-square rounded-full h-[120px]"></div>
+		<!-- svelte-ignore a11y-img-redundant-alt -->
+		<img src={CVPhoto} class="bg-slate-400 aspect-square rounded-full h-[152px]" alt="CV photo"/>
 	</div>
 	<div class="text-right flex flex-col">
 		<p class="text-2xl">Kristof K. <b>Drexler</b></p>
