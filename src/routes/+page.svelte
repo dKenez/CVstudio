@@ -18,7 +18,7 @@
 	}
 
 	function downloadPDF() {
-		const pdfUrl = '/KKD_CV_2024jun27.pdf'; // Path to your PDF file in the public directory
+		const pdfUrl = '/KKD_CV_2025may26.pdf'; // Path to your PDF file in the public directory
 		const link = document.createElement('a');
 		link.href = pdfUrl;
 		link.download = 'resume.pdf'; // Name for the downloaded file

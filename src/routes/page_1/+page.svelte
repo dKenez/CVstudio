@@ -1,12 +1,10 @@
 <script lang="ts">
 	import Experience from '$lib/components/Experience.svelte';
 	import Header from '$lib/components/Header.svelte';
-	import Skills from '$lib/components/Skills.svelte';
 </script>
 
 <div class="page bg-white px-12 py-12 mb-12" id="page-1">
 	<Header />
-	<Skills />
 	<Experience />
 </div>
 
