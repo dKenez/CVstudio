@@ -1,5 +1,4 @@
 <script lang="ts">
-	// Add your script logic here
 	export let company: string;
 	export let position: string;
 	export let startDate: number;
@@ -29,8 +28,6 @@
 </div>
 
 <style>
-	/* Add your component styles here */
-
 	.item::before {
 		content: '🔹';
 	}

@@ -2,33 +2,50 @@
 	import ExperienceElement from './ExperienceElement.svelte';
 
 	import MetriksLogo from '$lib/assets/metriks-logo.svg';
-    import MaxwhereLogo from '$lib/assets/mw-logo.svg';
-    import ProfirentLogo from '$lib/assets/profirent-logo.svg';
-    import RobotizalunkLogo from '$lib/assets/robotizalunk-logo.svg';
+	import KauzaLogo from '$lib/assets/kauza-logo.svg';
+	import MaxwhereLogo from '$lib/assets/mw-logo.svg';
+	import ProfirentLogo from '$lib/assets/profirent-logo.svg';
+	import RobotizalunkLogo from '$lib/assets/robotizalunk-logo.svg';
+
+	import Skills from '$lib/components/Skills.svelte';
 </script>
 
 <div class="flex flex-col gap-4 mb-6">
 	<div class="flex justify-between gap-4">
 		<div class="border-b-2 border-slate-200 flex-1"></div>
-		<h2 class="font-bold">Experience</h2>
+		<h2 class="font-bold">Skills & Experience</h2>
 		<div class="border-b-2 border-slate-200 flex-1"></div>
 	</div>
 
 	<div class="flex flex-col gap-4">
+		<Skills />
+		<ExperienceElement
+			position="ML ninja"
+			company="Kauza ApS"
+			startDate={2024}
+			endDate="Present"
+			logo={KauzaLogo}
+			country="Denmark"
+			city="Copenhagen"
+			description={[
+				'Developing advanced language models to drive industry-leading consumer data products',
+				'Operating at scale with robust data governance',
+				'Tech stack: Python, GCP, and all the blazing-fast Rust libraries 🔥'
+			]}
+		/>
 		<ExperienceElement
 			position="Lead Frontend Engineer"
 			company="Metriks ApS"
 			startDate={2022}
-			endDate="Present"
+			endDate={2024}
 			logo={MetriksLogo}
 			country="Denmark"
 			city="Copenhagen"
 			description={[
-				'Responsible for designing and developing webapp frontend from the ground up',
-				'Later took up responsibilities in the backend development and DevOps',
-				'Tech stack: React, Redux, Next.js, fastAPI, Redis, Docker, TypeScript, Python',
+				'Redesigned and built a new and modern webapp frontend with sleek, responsive UI/UX',
+				'Stepped into backend and DevOps to keep things running fast and smooth',
+				'Tech stack: React, Redux, Next.js, FastAPI, Redis, Docker, TypeScript, Python'
 			]}
-
 		/>
 		<ExperienceElement
 			position="Junior Software Engineer"
@@ -39,8 +56,8 @@
 			country="Hungary"
 			city="Budapest"
 			description={[
-				'Part of the team developing bespoke digital twin solutions for clients',
-				'Implemented system for real-time visualization of additive manufacturing processes',
+				'Engineered custom digital twin platforms tailored to client needs',
+				'Built real-time visualization tools for additive manufacturing workflows',
 				'Tech stack: React, Vue, Three.js, Electron, TypeScript, Python'
 			]}
 		/>
@@ -53,8 +70,8 @@
 			country="Hungary"
 			city="Budapest"
 			description={[
-				'Supported sales team with scripting and automation',
-				'Developed AI solution to automate archiving, saving ~300 hours of manual data entry',
+				'Empowered the sales team with scripting, automation, and custom tools',
+				'Delivered AI-powered archiving solution, eliminating ~300 hours of manual work',
 				'Tech stack: Python, PyTorch, Google Tesseract'
 			]}
 		/>
@@ -66,9 +83,9 @@
 			country="Hungary"
 			city="Budapest"
 			description={[
-				'Worked on automating inventory management of warehouses using drones',
-				'Responsible for developing image recognition software on drone and server-side',
-				'Tech stack:  Python, OpenCV, PyTorch, TorchVision, ROS'
+				'Built drone-powered automation systems for warehouse inventory management',
+				'Developed image recognition software for both onboard and server-side processing',
+				'Tech stack: Python, OpenCV, PyTorch, TorchVision, ROS'
 			]}
 		/>
 	</div>

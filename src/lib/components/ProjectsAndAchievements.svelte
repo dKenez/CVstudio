@@ -29,7 +29,7 @@
 			]}
 		/>
 		<ExperienceElement
-			position="3rd place winner"
+			position="Placed 3rd"
 			company="BEST Copenhagen ValHacks hackathon"
 			startDate={2024}
 			logo={ValhacksLogo}

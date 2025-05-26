@@ -16,6 +16,6 @@
 	/* Add your component styles here */
 
 	.item::before {
-        content: '🔹';
+		content: '🔹';
 	}
 </style>

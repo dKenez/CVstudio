@@ -42,7 +42,7 @@
 		<div class="pages" bind:this={pages}>
 			<div class="page bg-white px-12 py-12 mb-12" id="page-1">
 				<Header />
-				<Skills />
+				<!-- <Skills /> -->
 				<Experience />
 			</div>
 			<div class="page bg-white px-12 py-12 mb-10" id="page-2">

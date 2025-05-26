@@ -5,9 +5,9 @@
 </script>
 
 <div class="page bg-white px-12 py-12 mb-12" id="page-1">
-    <Header />
-    <Skills />
-    <Experience />
+	<Header />
+	<Skills />
+	<Experience />
 </div>
 
 <style lang="postcss">
