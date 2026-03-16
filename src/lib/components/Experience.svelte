@@ -7,18 +7,16 @@
 	import ProfirentLogo from '$lib/assets/profirent-logo.svg';
 	import RobotizalunkLogo from '$lib/assets/robotizalunk-logo.svg';
 
-	import Skills from '$lib/components/Skills.svelte';
 </script>
 
 <div class="flex flex-col gap-4 mb-6">
 	<div class="flex justify-between gap-4">
 		<div class="border-b-2 border-slate-200 flex-1"></div>
-		<h2 class="font-bold">Skills & Experience</h2>
+		<h2 class="font-bold">Experience</h2>
 		<div class="border-b-2 border-slate-200 flex-1"></div>
 	</div>
 
 	<div class="flex flex-col gap-4">
-		<Skills />
 		<ExperienceElement
 			position="ML ninja"
 			company="Kauza ApS"
