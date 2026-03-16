@@ -11,6 +11,6 @@
 		<p class="text-2xl">Kristof <b>Drexler</b></p>
 		<p class="text-lg">MSc. Autonomous Systems</p>
 		<a class="text-sm font-thin" href="mailto:k.k.drexler@gmail.com">k.k.drexler@gmail.com</a>
-		<a class="text-sm font-thin" href="tel:+4591101679">+45 31 49 36 71</a>
+		<a class="text-sm font-thin" href="tel:+4531493671">+45 31 49 36 71</a>
 	</div>
 </div>

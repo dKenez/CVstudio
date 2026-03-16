@@ -3,9 +3,9 @@
 	import Contact from '$lib/components/Contact.svelte';
 	import Education from '$lib/components/Education.svelte';
 	import Experience from '$lib/components/Experience.svelte';
+	import ExperienceContinued from '$lib/components/ExperienceContinued.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import ProjectsAndAchievements from '$lib/components/ProjectsAndAchievements.svelte';
-	import Skills from '$lib/components/Skills.svelte';
 
 	let pageWrapper: HTMLDivElement;
 	let pages: HTMLDivElement;
@@ -42,11 +42,13 @@
 		<div class="pages" bind:this={pages}>
 			<div class="page bg-white px-12 py-12 mb-12" id="page-1">
 				<Header />
-				<!-- <Skills /> -->
 				<Experience />
 			</div>
-			<div class="page bg-white px-12 py-12 mb-10" id="page-2">
+			<div class="page bg-white px-12 py-12 mb-12" id="page-2">
+				<ExperienceContinued />
 				<Education />
+			</div>
+			<div class="page bg-white px-12 py-12 mb-12" id="page-3">
 				<ProjectsAndAchievements />
 				<Contact />
 			</div>

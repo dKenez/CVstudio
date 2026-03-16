@@ -4,9 +4,6 @@
 	import NumeratorLogo from '$lib/assets/numerator-logo.svg';
 	import MetriksLogo from '$lib/assets/metriks-logo.svg';
 	import KauzaLogo from '$lib/assets/kauza-logo.svg';
-	import MaxwhereLogo from '$lib/assets/mw-logo.svg';
-	import ProfirentLogo from '$lib/assets/profirent-logo.svg';
-	import RobotizalunkLogo from '$lib/assets/robotizalunk-logo.svg';
 
 </script>
 
@@ -44,7 +41,7 @@
 				'Developing advanced language models to drive industry-leading FMCG data products',
 				'Operating at scale with robust data governance'
 			]}
-			stack={['Python', 'GCP', 'Terraform', 'Docker']}
+			stack={['Python', 'GCP', 'Terraform', 'Docker', 'PostgreSQL']}
 		/>
 		<ExperienceElement
 			position="Lead Frontend Engineer"
@@ -60,45 +57,5 @@
 			]}
 			stack={['React', 'Redux', 'Next.js', 'FastAPI', 'Redis', 'Docker', 'TypeScript', 'Python']}
 		/>
-		<ExperienceElement
-			position="Junior Software Engineer"
-			company="MaxWhere Solutions Ltd."
-			startDate={2021}
-			endDate={2022}
-			logo={MaxwhereLogo}
-			country="Hungary"
-			city="Budapest"
-			description={[
-				'Engineered custom digital twin platforms tailored to client needs',
-				'Built real-time visualization tools for additive manufacturing workflows'
-			]}
-			stack={['React', 'Vue', 'Three.js', 'Electron', 'TypeScript', 'Python']}
-		/>
-		<ExperienceElement
-			position="Junior Software Engineer"
-			company="Profirent Kft."
-			startDate={2020}
-			endDate={2021}
-			logo={ProfirentLogo}
-			country="Hungary"
-			city="Budapest"
-			description={[
-				'Automated rental management workflows with VBScript',
-				'Built a Python computer vision pipeline to process years of document backlogs, eliminating ~300 hours of manual work'
-			]}
-			stack={['Python', 'PyTorch', 'Google Tesseract', 'VBScript']}
-		/>
-		<ExperienceElement
-			position="Engineering Intern"
-			company="Robotizálunk Kft."
-			startDate={2019}
-			logo={RobotizalunkLogo}
-			country="Hungary"
-			city="Budapest"
-			description={[
-				'Built computer vision pipelines for automation of warehouse inventory management workflows'
-			]}
-			stack={['Python', 'OpenCV', 'PyTorch', 'TorchVision', 'ROS']}
-		/>
-	</div>
+</div>
 </div>

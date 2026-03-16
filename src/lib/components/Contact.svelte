@@ -22,7 +22,7 @@
 				</div>
 				<div class="flex items-center gap-2">
 					<PhoneSolid class="h-8 aspect-square text-[#2094f1]" />
-					<a href="tel:+4591101679" class="text-sm">+45 911 01679</a>
+					<a href="tel:+4531493671" class="text-sm">+45 31 49 36 71</a>
 				</div>
 			</div>
 			<div class="flex justify-around">
