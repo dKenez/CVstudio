@@ -13,8 +13,8 @@
 	<img src={logo} alt={`${position} - ${company}`} class="aspect-square h-20" />
 	<div>
 		<div class="flex gap-4">
-			<p class="font-bold text-xs">{startDate}{endDate ? ` - ${endDate}` : ''}</p>
-			<p class="italic text-xs">{city}, {country}</p>
+			<p class="font-bold text-xs text-zinc-500">{startDate}{endDate ? ` - ${endDate}` : ''}</p>
+			<p class="italic text-xs text-zinc-500">{city}, {country}</p>
 		</div>
 		<p class="font-bold text-xl">{company}</p>
 		<p class="font">{position}</p>
@@ -28,6 +28,10 @@
 </div>
 
 <style>
+	.item {
+		padding-left: 1.25em;
+		text-indent: -1.25em;
+	}
 	.item::before {
 		content: '🔹';
 	}

@@ -158,8 +158,8 @@
 	}
 
 	.backdrop {
-		background-color: #475569;
-		background-image: radial-gradient(#94a3b8, 1px, transparent 1px);
+		background-color: #1e3a5f;
+		background-image: radial-gradient(#2d5a8e, 1px, transparent 1px);
 		background-size: 40px 40px;
 		background-attachment: fixed;
 		width: 100vw;

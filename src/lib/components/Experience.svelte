@@ -1,6 +1,7 @@
 <script>
 	import ExperienceElement from './ExperienceElement.svelte';
 
+	import NumeratorLogo from '$lib/assets/numerator-logo.svg';
 	import MetriksLogo from '$lib/assets/metriks-logo.svg';
 	import KauzaLogo from '$lib/assets/kauza-logo.svg';
 	import MaxwhereLogo from '$lib/assets/mw-logo.svg';
@@ -18,17 +19,31 @@
 
 	<div class="flex flex-col gap-4">
 		<ExperienceElement
-			position="ML ninja"
+			position="Machine Learning Engineer"
+			company="Numerator"
+			startDate={2026}
+			endDate="Present"
+			logo={NumeratorLogo}
+			country="Denmark"
+			city="Copenhagen"
+			description={[
+				'Continued FMCG market analytics post-acquisition in a larger team',
+				'Expanding focus into CI/CD Cloud Engineering at scale',
+				'Tech stack: Python, AWS, Terraform, Kubernetes, GitHub actions'
+			]}
+		/>
+		<ExperienceElement
+			position="Machine Learning Engineer"
 			company="Kauza ApS"
 			startDate={2024}
-			endDate="Present"
+			endDate={2026}
 			logo={KauzaLogo}
 			country="Denmark"
 			city="Copenhagen"
 			description={[
-				'Developing advanced language models to drive industry-leading consumer data products',
+				'Developing advanced language models to drive industry-leading FMCG data products',
 				'Operating at scale with robust data governance',
-				'Tech stack: Python, GCP, and all the blazing-fast Rust libraries 🔥'
+				'Tech stack: Python, GCP, Terraform, Docker'
 			]}
 		/>
 		<ExperienceElement
@@ -40,7 +55,7 @@
 			country="Denmark"
 			city="Copenhagen"
 			description={[
-				'Redesigned and built a new and modern webapp frontend with sleek, responsive UI/UX',
+				'Redesigned and built a modern webapp with sleek and responsive UI/UX',
 				'Stepped into backend and DevOps to keep things running fast and smooth',
 				'Tech stack: React, Redux, Next.js, FastAPI, Redis, Docker, TypeScript, Python'
 			]}
@@ -68,8 +83,8 @@
 			country="Hungary"
 			city="Budapest"
 			description={[
-				'Empowered the sales team with scripting, automation, and custom tools',
-				'Delivered AI-powered archiving solution, eliminating ~300 hours of manual work',
+				'Automated rental management workflows with VBScript',
+				'Built a Python computer vision pipeline to process years of document backlogs, eliminating ~300 hours of manual work',
 				'Tech stack: Python, PyTorch, Google Tesseract'
 			]}
 		/>
@@ -81,8 +96,7 @@
 			country="Hungary"
 			city="Budapest"
 			description={[
-				'Built drone-powered automation systems for warehouse inventory management',
-				'Developed image recognition software for both onboard and server-side processing',
+				'Built computer vision pipelines for automation of warehouse inventory management workflows',
 				'Tech stack: Python, OpenCV, PyTorch, TorchVision, ROS'
 			]}
 		/>
