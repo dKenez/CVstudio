@@ -1,4 +1,6 @@
 <script lang="ts">
+	import StackPill from './StackPill.svelte';
+
 	export let company: string;
 	export let position: string;
 	export let startDate: number;
@@ -7,6 +9,7 @@
 	export let city: string;
 	export let country: string;
 	export let description: string[];
+	export let stack: string[] = [];
 </script>
 
 <div class="flex gap-12 items-center">
@@ -24,6 +27,14 @@
 				<li class="item text-sm">{item}</li>
 			{/each}
 		</ul>
+
+		{#if stack.length > 0}
+			<div class="flex flex-wrap gap-1 mt-1">
+				{#each stack as label}
+					<StackPill {label} />
+				{/each}
+			</div>
+		{/if}
 	</div>
 </div>
 

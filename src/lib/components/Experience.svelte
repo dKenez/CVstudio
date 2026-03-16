@@ -28,9 +28,9 @@
 			city="Copenhagen"
 			description={[
 				'Continued FMCG market analytics post-acquisition in a larger team',
-				'Expanding focus into CI/CD Cloud Engineering at scale',
-				'Tech stack: Python, AWS, Terraform, Kubernetes, GitHub actions'
+				'Expanding focus into CI/CD Cloud Engineering at scale'
 			]}
+			stack={['Python', 'AWS', 'Terraform', 'Kubernetes', 'GitHub Actions']}
 		/>
 		<ExperienceElement
 			position="Machine Learning Engineer"
@@ -42,9 +42,9 @@
 			city="Copenhagen"
 			description={[
 				'Developing advanced language models to drive industry-leading FMCG data products',
-				'Operating at scale with robust data governance',
-				'Tech stack: Python, GCP, Terraform, Docker'
+				'Operating at scale with robust data governance'
 			]}
+			stack={['Python', 'GCP', 'Terraform', 'Docker']}
 		/>
 		<ExperienceElement
 			position="Lead Frontend Engineer"
@@ -56,9 +56,9 @@
 			city="Copenhagen"
 			description={[
 				'Redesigned and built a modern webapp with sleek and responsive UI/UX',
-				'Stepped into backend and DevOps to keep things running fast and smooth',
-				'Tech stack: React, Redux, Next.js, FastAPI, Redis, Docker, TypeScript, Python'
+				'Stepped into backend and DevOps to keep things running fast and smooth'
 			]}
+			stack={['React', 'Redux', 'Next.js', 'FastAPI', 'Redis', 'Docker', 'TypeScript', 'Python']}
 		/>
 		<ExperienceElement
 			position="Junior Software Engineer"
@@ -70,9 +70,9 @@
 			city="Budapest"
 			description={[
 				'Engineered custom digital twin platforms tailored to client needs',
-				'Built real-time visualization tools for additive manufacturing workflows',
-				'Tech stack: React, Vue, Three.js, Electron, TypeScript, Python'
+				'Built real-time visualization tools for additive manufacturing workflows'
 			]}
+			stack={['React', 'Vue', 'Three.js', 'Electron', 'TypeScript', 'Python']}
 		/>
 		<ExperienceElement
 			position="Junior Software Engineer"
@@ -84,9 +84,9 @@
 			city="Budapest"
 			description={[
 				'Automated rental management workflows with VBScript',
-				'Built a Python computer vision pipeline to process years of document backlogs, eliminating ~300 hours of manual work',
-				'Tech stack: Python, PyTorch, Google Tesseract'
+				'Built a Python computer vision pipeline to process years of document backlogs, eliminating ~300 hours of manual work'
 			]}
+			stack={['Python', 'PyTorch', 'Google Tesseract', 'VBScript']}
 		/>
 		<ExperienceElement
 			position="Engineering Intern"
@@ -96,9 +96,9 @@
 			country="Hungary"
 			city="Budapest"
 			description={[
-				'Built computer vision pipelines for automation of warehouse inventory management workflows',
-				'Tech stack: Python, OpenCV, PyTorch, TorchVision, ROS'
+				'Built computer vision pipelines for automation of warehouse inventory management workflows'
 			]}
+			stack={['Python', 'OpenCV', 'PyTorch', 'TorchVision', 'ROS']}
 		/>
 	</div>
 </div>
