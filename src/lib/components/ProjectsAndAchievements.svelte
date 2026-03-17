@@ -42,7 +42,7 @@
 			]}
 		/>
 		<ExperienceElement
-			position="Machine Learning and Data Mining | Introduction to Programming"
+			position="Machine Learning and Data Mining | MLOps | Introduction to Programming"
 			company="Teaching Assistant at Technical University of Denmark"
 			startDate={2023}
 			logo={DTULogo}
