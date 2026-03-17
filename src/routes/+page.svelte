@@ -2,6 +2,7 @@
 	import { onMount, onDestroy } from 'svelte';
 	import Contact from '$lib/components/Contact.svelte';
 	import Education from '$lib/components/Education.svelte';
+	import About from '$lib/components/About.svelte';
 	import Experience from '$lib/components/Experience.svelte';
 	import ExperienceContinued from '$lib/components/ExperienceContinued.svelte';
 	import Header from '$lib/components/Header.svelte';
@@ -42,6 +43,9 @@
 		<div class="pages" bind:this={pages}>
 			<div class="page bg-white px-12 py-12 mb-12" id="page-1">
 				<Header />
+				<div class="mt-6">
+					<About />
+				</div>
 				<Experience />
 			</div>
 			<div class="page bg-white px-12 py-12 mb-12" id="page-2">

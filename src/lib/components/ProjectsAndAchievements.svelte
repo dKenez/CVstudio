@@ -24,9 +24,9 @@
 			description={[
 				'Full stack Deep Learning project with webapp deployed on the cloud',
 				'Implemented a novel method for global image localization using deep learning',
-				'Developed using cuttintg edge technologies in MLOps, Webdev, and Deep Learning',
-				'Tech stack: SvelteKit, TailwindCSS, TypeScript, PyTorch, Polars, PostgreSQL, Docker'
+				'Developed using cutting edge technologies in MLOps, Webdev, and Deep Learning'
 			]}
+			stack={['SvelteKit', 'TailwindCSS', 'TypeScript', 'PyTorch', 'Polars', 'PostgreSQL', 'Docker']}
 		/>
 		<ExperienceElement
 			position="Placed 3rd"
