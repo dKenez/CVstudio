@@ -55,18 +55,15 @@
 		</div>
 	</div>
 	<!-- Floating Buttons -->
-	<div class="floating-buttons fixed flex gap-4">
-		<button
-			class="text-xs sm:text-sm md:text-base rounded-lg bg-stone-200 px-4 py-2 shadow-md shadow-slate-800/50 ring-2 ring-blue-500 ring-offset-2 ring-offset-slate-600 hover:shadow-xl hover:ring-blue-400 transition ease-in-out duration-300"
-			><a href="https://www.dkenez.dk">Return to <span class="text-blue-500">www.dkenez.dk</span></a
-			></button
-		>
-		<button
-			on:click={downloadPDF}
-			class="text-xs sm:text-sm md:text-base rounded-lg bg-stone-200 px-4 py-2 shadow-md shadow-slate-800/50 ring-2 ring-blue-500 ring-offset-2 ring-offset-slate-600 hover:shadow-xl hover:ring-blue-400 transition ease-in-out duration-300"
-			>Download PDF</button
-		>
-	</div>
+	<button
+		on:click={downloadPDF}
+		class="fixed bottom-10 right-10 w-14 h-14 rounded-full bg-stone-200 shadow-md shadow-slate-800/50 ring-2 ring-blue-500 ring-offset-2 ring-offset-slate-600 hover:shadow-xl hover:ring-blue-400 transition ease-in-out duration-300 flex items-center justify-center"
+		aria-label="Download PDF"
+	>
+		<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
+		</svg>
+	</button>
 </div>
 
 <style lang="postcss">
@@ -90,39 +87,6 @@
 		height: fit-content;
 	}
 
-	@media (min-width: 1301px) {
-		.floating-buttons {
-			position: fixed;
-			right: 20px;
-			top: 50%;
-			transform: translateY(-50%);
-			flex-direction: column;
-		}
-	}
-	@media (max-width: 1300px) {
-		.floating-buttons {
-			position: fixed;
-			bottom: 20px;
-			width: 100%;
-			justify-content: center;
-			flex-direction: row;
-		}
-	}
-
-	.download-button {
-		background-color: #1d4ed8;
-		color: white;
-		border: none;
-		padding: 10px 20px;
-		border-radius: 5px;
-		cursor: pointer;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		transition: background-color 0.3s;
-	}
-
-	.download-button:hover {
-		background-color: #2563eb;
-	}
 
 	/* Smaller devices */
 	@media (max-width: 419px) {
