@@ -1,5 +1,6 @@
 <script lang="ts">
 	import About from '$lib/components/About.svelte';
+	import WhyApplying from '$lib/components/WhyApplying.svelte';
 	import Experience from '$lib/components/Experience.svelte';
 	import Header from '$lib/components/Header.svelte';
 </script>
@@ -9,6 +10,7 @@
 	<div class="mt-6">
 		<About />
 	</div>
+	<WhyApplying />
 	<Experience />
 </div>
 

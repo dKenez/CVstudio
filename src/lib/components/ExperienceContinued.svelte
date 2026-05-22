@@ -1,6 +1,7 @@
 <script>
 	import ExperienceElement from './ExperienceElement.svelte';
 
+	import MetriksLogo from '$lib/assets/metriks-logo.svg';
 	import MaxwhereLogo from '$lib/assets/mw-logo.svg';
 	import ProfirentLogo from '$lib/assets/profirent-logo.svg';
 	import RobotizalunkLogo from '$lib/assets/robotizalunk-logo.svg';
@@ -14,6 +15,20 @@
 	</div>
 
 	<div class="flex flex-col gap-4">
+		<ExperienceElement
+			position="Lead Frontend Engineer"
+			company="Metriks ApS"
+			startDate={2022}
+			endDate={2024}
+			logo={MetriksLogo}
+			country="Denmark"
+			city="Copenhagen"
+			description={[
+				'Redesigned and built a modern webapp with sleek and responsive UI/UX',
+				'Stepped into backend and DevOps to keep things running fast and smooth'
+			]}
+			stack={['React', 'Redux', 'Next.js', 'FastAPI', 'Redis', 'Docker', 'TypeScript', 'Python']}
+		/>
 		<ExperienceElement
 			position="Junior Software Engineer"
 			company="MaxWhere Solutions Ltd."

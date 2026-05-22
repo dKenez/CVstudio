@@ -2,7 +2,6 @@
 	import ExperienceElement from './ExperienceElement.svelte';
 
 	import NumeratorLogo from '$lib/assets/numerator-logo.svg';
-	import MetriksLogo from '$lib/assets/metriks-logo.svg';
 	import KauzaLogo from '$lib/assets/kauza-logo.svg';
 
 </script>
@@ -42,20 +41,6 @@
 				'Operating at scale with robust data governance'
 			]}
 			stack={['Python', 'GCP', 'Transformers', 'Terraform', 'Docker', 'PostgreSQL']}
-		/>
-		<ExperienceElement
-			position="Lead Frontend Engineer"
-			company="Metriks ApS"
-			startDate={2022}
-			endDate={2024}
-			logo={MetriksLogo}
-			country="Denmark"
-			city="Copenhagen"
-			description={[
-				'Redesigned and built a modern webapp with sleek and responsive UI/UX',
-				'Stepped into backend and DevOps to keep things running fast and smooth'
-			]}
-			stack={['React', 'Redux', 'Next.js', 'FastAPI', 'Redis', 'Docker', 'TypeScript', 'Python']}
 		/>
 </div>
 </div>
