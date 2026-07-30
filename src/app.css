@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Disable ligature glyph substitution so the PDF text layer copies correctly.
+   Without this, "fl" in e.g. "drexler" / "gmail" collapses into a single ligature
+   glyph that the Acrobat/browser text extractor cannot map back to individual letters. */
+@media print {
+	* {
+		font-variant-ligatures: none;
+		-webkit-font-feature-settings: 'liga' 0, 'clig' 0;
+		font-feature-settings: 'liga' 0, 'clig' 0;
+	}
+}

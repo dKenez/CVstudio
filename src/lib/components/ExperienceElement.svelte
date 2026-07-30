@@ -10,6 +10,7 @@
 	export let country: string;
 	export let description: string[];
 	export let stack: string[] = [];
+	export let note: string = '';
 </script>
 
 <div class="flex gap-12 items-center">
@@ -19,7 +20,10 @@
 			<p class="font-bold text-xs text-zinc-500">{startDate}{endDate ? ` - ${endDate}` : ''}</p>
 			<p class="italic text-xs text-zinc-500">{city}, {country}</p>
 		</div>
-		<p class="font-bold text-xl">{company}</p>
+		<div class="flex items-baseline gap-2">
+			<p class="font-bold text-xl">{company}</p>
+			{#if note}<span class="font-bold text-sm text-zinc-500">{note}</span>{/if}
+		</div>
 		<p class="font">{position}</p>
 
 		<ul>
