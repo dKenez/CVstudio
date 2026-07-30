@@ -24,22 +24,24 @@
 			country="Denmark"
 			city="Copenhagen"
 			description={[
-				'Continued FMCG market analytics post-acquisition in a larger team',
-				'Expanding focus into CI/CD Cloud Engineering at scale'
+				'Build and operate production LLM pipelines for FMCG market analytics — owning model deployment, CI/CD, and post-deployment monitoring on AWS',
+				'Manage containerized ML services with Kubernetes and Docker, infrastructure-as-code with Terraform, and automated delivery via GitHub Actions',
+				'Built a receipt-dewarping module that fits a homography from OCR word-box geometry to correct perspective ahead of LLM extraction, improving downstream extraction reliability'
 			]}
-			stack={['Python', 'AWS', 'Transformers', 'LLMs', 'Terraform', 'Kubernetes', 'GitHub Actions']}
+			stack={['Python', 'AWS', 'Transformers', 'LLMs', 'Terraform', 'Kubernetes', 'Docker', 'GitHub Actions']}
 		/>
 		<ExperienceElement
 			position="Machine Learning Engineer"
 			company="Kauza ApS"
+			note="acquired by Numerator, 2026"
 			startDate={2024}
 			endDate={2026}
 			logo={KauzaLogo}
 			country="Denmark"
 			city="Copenhagen"
 			description={[
-				'Developing advanced language models to drive industry-leading FMCG data products',
-				'Operating at scale with robust data governance'
+				'Developed LLM-based extraction and classification systems powering industry-leading FMCG data products',
+				'Built data pipelines and cloud deployment infrastructure on GCP using Terraform and Docker'
 			]}
 			stack={['Python', 'GCP', 'Transformers', 'Terraform', 'Docker', 'PostgreSQL']}
 		/>

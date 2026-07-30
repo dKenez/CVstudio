@@ -6,12 +6,12 @@
 	</div>
 
 	<p class="text-sm leading-relaxed text-justify mt-2">
-		Machine Learning Engineer with experience building production-grade ML systems that
-		make a real difference, from eliminating hundreds of hours of manual work to powering
-		industry-scale data products used by millions. Currently driving LLM-powered FMCG market
-		analytics and Cloud Engineering at Numerator following its acquisition of Kauza ApS. My
-		background spans Computer Vision, Deep Learning, LLMs, with hands-on
-		experience taking models from research to production through robust MLOps practices including
-		CI/CD pipelines, cloud infrastructure, and containerized deployments.
+		Machine Learning Engineer focused on taking ML and LLM systems from development into
+		reliable production — deployment, CI/CD, cloud infrastructure, and monitoring. Currently
+		building and operating LLM-powered FMCG market analytics at Numerator (following its
+		acquisition of Kauza ApS) on AWS, with Kubernetes, Terraform, and GitHub Actions.
+		Background spans Computer Vision, Deep Learning, and LLMs, with a track record of
+		production-grade systems — from eliminating hundreds of hours of manual work to powering
+		industry-scale data products used by millions.
 	</p>
 </div>
