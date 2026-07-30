@@ -27,7 +27,7 @@
 				'Continued FMCG market analytics post-acquisition in a larger team',
 				'Expanding focus into CI/CD Cloud Engineering at scale'
 			]}
-			stack={['Python', 'AWS', 'Transformers', 'LLMs', 'Terraform', 'Kubernetes', 'GitHub Actions']}
+			stack={['Python', 'SQL', 'AWS', 'Snowflake', 'Transformers', 'LLMs', 'Terraform', 'Kubernetes', 'GitHub Actions']}
 		/>
 		<ExperienceElement
 			position="Machine Learning Engineer"
@@ -41,7 +41,7 @@
 				'Developing advanced language models to drive industry-leading FMCG data products',
 				'Operating at scale with robust data governance'
 			]}
-			stack={['Python', 'GCP', 'Transformers', 'Terraform', 'Docker', 'PostgreSQL']}
+			stack={['Python', 'Rust', 'GCP', 'BigQuery', 'Transformers', 'Terraform', 'Docker', 'PostgreSQL']}
 		/>
 		<ExperienceElement
 			position="Lead Frontend Engineer"

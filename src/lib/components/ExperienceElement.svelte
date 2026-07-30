@@ -13,12 +13,12 @@
 	export let note: string = '';
 </script>
 
-<div class="flex gap-12 items-center">
-	<img src={logo} alt={`${position} - ${company}`} class="aspect-square h-20" />
+<div class="flex gap-6 items-center">
+	<img src={logo} alt={`${position} - ${company}`} class="aspect-square h-14" />
 	<div>
 		<div class="flex gap-4">
 			<p class="font-bold text-xs text-zinc-500">{startDate}{endDate ? ` - ${endDate}` : ''}</p>
-			<p class="italic text-xs text-zinc-500">{city}, {country}</p>
+			<p class="italic text-xs text-zinc-500">{city}{country ? `, ${country}` : ''}</p>
 		</div>
 		<div class="flex items-baseline gap-2">
 			<p class="font-bold text-xl">{company}</p>

@@ -22,14 +22,13 @@
 			country="Denmark"
 			city="Lyngby"
 			description={[
-				"Master's education focusing on Robotics, Control, AI, and Human-Computer Interaction",
 				'Specialized in Computer Vision and Deep Learning for Autonomous Systems',
 				'Thesis project: Global Localization of Earthly Images powered by Deep Learning'
 			]}
 		/>
 
 		<ExperienceElement
-			position="BSc. Mechatronical Engineering"
+			position="BSc. Mechatronics Engineering"
 			company="Budapest University of Technology and Economics"
 			startDate={2018}
 			endDate={2022}
@@ -37,7 +36,6 @@
 			country="Hungary"
 			city="Budapest"
 			description={[
-				"Bachelor's education focusing on Mechanical, Electrical, and Control Engineering",
 				'Specialized in Cyberphysical Systems and Robotics',
 				'Thesis project: Implementing Additive Manufacturing Processes in Digital Twin Systems'
 			]}

@@ -4,6 +4,7 @@
 	import LocusLogo from '$lib/assets/locus-logo.svg';
 	import ValhacksLogo from '$lib/assets/valhacks-logo1.svg';
 	import DTULogo from '$lib/assets/dtu-logo.svg';
+	import EddaLogo from '$lib/assets/connected-ecosystem.svg';
 </script>
 
 <div class="flex flex-col gap-4 mb-6">
@@ -15,6 +16,21 @@
 
 	<div class="flex flex-col gap-4">
 		<ExperienceElement
+			position="Personal project"
+			company="edda — Two-site self-hosted infrastructure"
+			startDate={2025}
+			endDate="Present"
+			logo={EddaLogo}
+			country=""
+			city="Budapest / Copenhagen"
+			description={[
+				'Two-site homelab (Budapest / Copenhagen) plus a cloud edge node, meshed over Tailscale; both sites behind CGNAT with a single public entry point and split-horizon DNS',
+				'Fully reproducible from code: Terraform for guest lifecycle, Ansible for OS and service config; any node rebuilds from a minimal OS image with one playbook run',
+				'Designed around a three-tier availability model, with hardware fail-safes on the thermal control path that restore vendor defaults on every exit path'
+			]}
+			stack={['Terraform', 'Ansible', 'Proxmox', 'ZFS', 'k3s', 'Docker', 'Tailscale', 'Prometheus']}
+		/>
+		<ExperienceElement
 			position="MSc. thesis project"
 			company="LOCUS Image Geolocation Webapp "
 			startDate={2024}
@@ -24,7 +40,7 @@
 			description={[
 				'Full stack Deep Learning project with webapp deployed on the cloud',
 				'Implemented a novel method for global image localization using deep learning',
-				'Developed using cutting edge technologies in MLOps, Webdev, and Deep Learning'
+				'Developed using cutting-edge technologies in MLOps, Webdev, and Deep Learning'
 			]}
 			stack={['SvelteKit', 'TailwindCSS', 'TypeScript', 'PyTorch', 'Polars', 'PostgreSQL', 'Docker']}
 		/>
@@ -38,7 +54,7 @@
 			description={[
 				'Developed a solution for processing audio signals for sleep monitoring of babies',
 				'Created a bespoke webapp for integrating with client hardware',
-				'Awarded for being only team to implement user-facing features with intuitive design'
+				'Awarded for being the only team to implement user-facing features with intuitive design'
 			]}
 		/>
 		<ExperienceElement
@@ -50,8 +66,7 @@
 			city="Lyngby"
 			description={[
 				'Assisted students in understanding complex topics in Machine Learning and Data Mining',
-				'Developed communicating ideas clearly, transcending skill and language barriers',
-				'Commended for ability to give clear and concise explanations and positive attitude'
+				'Communicated complex ideas clearly across skill and language barriers'
 			]}
 		/>
 	</div>

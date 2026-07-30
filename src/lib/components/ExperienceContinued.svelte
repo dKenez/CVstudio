@@ -3,7 +3,6 @@
 
 	import MaxwhereLogo from '$lib/assets/mw-logo.svg';
 	import ProfirentLogo from '$lib/assets/profirent-logo.svg';
-	import RobotizalunkLogo from '$lib/assets/robotizalunk-logo.svg';
 </script>
 
 <div class="flex flex-col gap-4 mb-6">
@@ -41,18 +40,6 @@
 				'Built a Python computer vision pipeline to process years of document backlogs, eliminating ~300 hours of manual work'
 			]}
 			stack={['Python', 'PyTorch', 'Google Tesseract', 'VBScript']}
-		/>
-		<ExperienceElement
-			position="Engineering Intern"
-			company="Robotizálunk Kft."
-			startDate={2019}
-			logo={RobotizalunkLogo}
-			country="Hungary"
-			city="Budapest"
-			description={[
-				'Built computer vision pipelines for automation of warehouse inventory management workflows'
-			]}
-			stack={['Python', 'OpenCV', 'PyTorch', 'TorchVision', 'ROS']}
 		/>
 	</div>
 </div>
