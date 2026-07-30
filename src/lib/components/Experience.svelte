@@ -4,7 +4,7 @@
 	import NumeratorLogo from '$lib/assets/numerator-logo.svg';
 	import MetriksLogo from '$lib/assets/metriks-logo.svg';
 	import KauzaLogo from '$lib/assets/kauza-logo.svg';
-
+	import MaxwhereLogo from '$lib/assets/mw-logo.svg';
 </script>
 
 <div class="flex flex-col gap-4 mb-6">
@@ -24,24 +24,45 @@
 			country="Denmark"
 			city="Copenhagen"
 			description={[
-				'Continued FMCG market analytics post-acquisition in a larger team',
-				'Expanding focus into CI/CD Cloud Engineering at scale'
+				'Build and operate production LLM pipelines for FMCG market analytics — owning model deployment, CI/CD, and post-deployment monitoring on AWS',
+				'Manage ML services on Kubernetes, IaC with Terraform, and CI/CD via GitHub Actions',
+				'Built a receipt-dewarping module that fits a homography from OCR word-box geometry to correct perspective ahead of LLM extraction — improving downstream extraction reliability'
 			]}
-			stack={['Python', 'SQL', 'AWS', 'Snowflake', 'Transformers', 'LLMs', 'Terraform', 'Kubernetes', 'GitHub Actions']}
+			stack={[
+				'Python',
+				'SQL',
+				'AWS',
+				'Snowflake',
+				'Transformers',
+				'LLMs',
+				'Terraform',
+				'Kubernetes',
+				'CI/CD'
+			]}
 		/>
 		<ExperienceElement
 			position="Machine Learning Engineer"
 			company="Kauza ApS"
+			note="acquired by Numerator, 2026"
 			startDate={2024}
 			endDate={2026}
 			logo={KauzaLogo}
 			country="Denmark"
 			city="Copenhagen"
 			description={[
-				'Developing advanced language models to drive industry-leading FMCG data products',
-				'Operating at scale with robust data governance'
+				'Developed transformer-based extraction / classification for industry-leading FMCG products',
+				'Built data pipelines and cloud deployment infrastructure on GCP using Terraform and Docker'
 			]}
-			stack={['Python', 'Rust', 'GCP', 'BigQuery', 'Transformers', 'Terraform', 'Docker', 'PostgreSQL']}
+			stack={[
+				'Python',
+				'Rust',
+				'GCP',
+				'BigQuery',
+				'Transformers',
+				'Terraform',
+				'Docker',
+				'PostgreSQL'
+			]}
 		/>
 		<ExperienceElement
 			position="Lead Frontend Engineer"
@@ -57,5 +78,19 @@
 			]}
 			stack={['React', 'Redux', 'Next.js', 'FastAPI', 'Redis', 'Docker', 'TypeScript', 'Python']}
 		/>
-</div>
+		<ExperienceElement
+			position="Junior Software Engineer"
+			company="MaxWhere Solutions Ltd."
+			startDate={2021}
+			endDate={2022}
+			logo={MaxwhereLogo}
+			country="Hungary"
+			city="Budapest"
+			description={[
+				'Engineered custom digital twin platforms tailored to client needs',
+				'Built real-time visualization tools for additive manufacturing workflows'
+			]}
+			stack={['React', 'Vue', 'Three.js', 'Electron', 'TypeScript', 'Python']}
+		/>
+	</div>
 </div>

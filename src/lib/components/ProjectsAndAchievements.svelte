@@ -21,12 +21,13 @@
 			startDate={2025}
 			endDate="Present"
 			logo={EddaLogo}
+			logoBg="#95969a"
 			country=""
 			city="Budapest / Copenhagen"
 			description={[
-				'Two-site homelab (Budapest / Copenhagen) plus a cloud edge node, meshed over Tailscale; both sites behind CGNAT with a single public entry point and split-horizon DNS',
+				'Two-site homelab (Budapest / Copenhagen) and a cloud edge node, meshed over Tailscale; both sites behind CGNAT with a single public entry point and split-horizon DNS',
 				'Fully reproducible from code: Terraform for guest lifecycle, Ansible for OS and service config; any node rebuilds from a minimal OS image with one playbook run',
-				'Designed around a three-tier availability model, with hardware fail-safes on the thermal control path that restore vendor defaults on every exit path'
+				// 'Designed around a three-tier availability model, with hardware fail-safes on the thermal control path that restore vendor defaults on every exit path'
 			]}
 			stack={['Terraform', 'Ansible', 'Proxmox', 'ZFS', 'k3s', 'Docker', 'Tailscale', 'Prometheus']}
 		/>
@@ -44,7 +45,7 @@
 			]}
 			stack={['SvelteKit', 'TailwindCSS', 'TypeScript', 'PyTorch', 'Polars', 'PostgreSQL', 'Docker']}
 		/>
-		<ExperienceElement
+		<!-- <ExperienceElement
 			position="Placed 3rd"
 			company="BEST Copenhagen ValHacks hackathon"
 			startDate={2024}
@@ -53,10 +54,10 @@
 			city="Lyngby"
 			description={[
 				'Developed a solution for processing audio signals for sleep monitoring of babies',
-				'Created a bespoke webapp for integrating with client hardware',
-				'Awarded for being the only team to implement user-facing features with intuitive design'
+				// 'Created a bespoke webapp for integrating with client hardware',
+				// 'Awarded for being the only team to implement user-facing features with intuitive design'
 			]}
-		/>
+		/> -->
 		<ExperienceElement
 			position="Machine Learning and Data Mining | MLOps | Introduction to Programming"
 			company="Teaching Assistant at Technical University of Denmark"

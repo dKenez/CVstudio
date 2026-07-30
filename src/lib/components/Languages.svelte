@@ -3,11 +3,11 @@
 		{ name: 'Hungarian', level: 'Native' },
 		{ name: 'English', level: 'Fluent' },
 		{ name: 'Danish', level: 'PD3' },
-		{ name: 'German, Spanish, Latin', level: 'Conversational' }
+		{ name: 'German, Spanish, Latin', level: 'Passionate conversationalist' }
 	];
 </script>
 
-<div class="flex flex-col gap-4 mb-6">
+<div class="flex flex-col gap-4">
 	<div class="flex justify-between gap-4">
 		<div class="border-b-2 border-slate-200 flex-1"></div>
 		<h2 class="font-bold">Languages</h2>
@@ -18,7 +18,7 @@
 		{#each languages as language}
 			<div>
 				<!-- role/job-title typography from Experience -->
-				<p class="font">{language.name}</p>
+				<p class="font text-sm">{language.name}</p>
 				<!-- location typography from Experience -->
 				<p class="italic text-xs text-zinc-500">{language.level}</p>
 			</div>

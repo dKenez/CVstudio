@@ -1,12 +1,7 @@
 <script lang="ts">
 	import { onMount, onDestroy } from 'svelte';
-	import Education from '$lib/components/Education.svelte';
-	import About from '$lib/components/About.svelte';
-	import Experience from '$lib/components/Experience.svelte';
-	import ExperienceContinued from '$lib/components/ExperienceContinued.svelte';
-	import Header from '$lib/components/Header.svelte';
-	import ProjectsAndAchievements from '$lib/components/ProjectsAndAchievements.svelte';
-	import Languages from '$lib/components/Languages.svelte';
+	import Page1 from '$lib/components/Page1.svelte';
+	import Page2 from '$lib/components/Page2.svelte';
 
 	let pageWrapper: HTMLDivElement;
 	let pages: HTMLDivElement;
@@ -19,7 +14,7 @@
 	}
 
 	function downloadPDF() {
-		const pdfUrl = '/KKD_CV_2026mar17.pdf'; // Path to your PDF file in the public directory
+		const pdfUrl = '/KKD_CV_2026jul30.pdf'; // Path to your PDF file in the public directory
 		const link = document.createElement('a');
 		link.href = pdfUrl;
 		link.download = 'kristof_drexler_resume.pdf'; // Name for the downloaded file
@@ -41,23 +36,8 @@
 <div class="bg-slate-600 min-h-screen min-w-screen p-10 flex justify-center backdrop">
 	<div class="page-wrapper" bind:this={pageWrapper}>
 		<div class="pages" bind:this={pages}>
-			<div class="page bg-white px-10 py-8 mb-12" id="page-1">
-				<Header />
-				<div class="mt-6 flex gap-8 items-start">
-					<div class="flex-1">
-						<About />
-					</div>
-					<div class="w-56 shrink-0">
-						<Languages />
-					</div>
-				</div>
-				<Experience />
-			</div>
-			<div class="page bg-white px-10 py-8 mb-12" id="page-2">
-				<ExperienceContinued />
-				<Education />
-				<ProjectsAndAchievements />
-			</div>
+			<Page1 preview />
+			<Page2 preview />
 		</div>
 	</div>
 	<!-- Floating Buttons -->
@@ -73,14 +53,6 @@
 </div>
 
 <style lang="postcss">
-	.page {
-		width: 210mm;
-		height: 297mm;
-		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-		display: flex;
-		flex-direction: column;
-	}
-
 	.pages {
 		transform-origin: center;
 	}

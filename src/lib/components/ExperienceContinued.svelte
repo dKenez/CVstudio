@@ -1,7 +1,6 @@
 <script>
 	import ExperienceElement from './ExperienceElement.svelte';
 
-	import MaxwhereLogo from '$lib/assets/mw-logo.svg';
 	import ProfirentLogo from '$lib/assets/profirent-logo.svg';
 </script>
 
@@ -13,20 +12,6 @@
 	</div>
 
 	<div class="flex flex-col gap-4">
-		<ExperienceElement
-			position="Junior Software Engineer"
-			company="MaxWhere Solutions Ltd."
-			startDate={2021}
-			endDate={2022}
-			logo={MaxwhereLogo}
-			country="Hungary"
-			city="Budapest"
-			description={[
-				'Engineered custom digital twin platforms tailored to client needs',
-				'Built real-time visualization tools for additive manufacturing workflows'
-			]}
-			stack={['React', 'Vue', 'Three.js', 'Electron', 'TypeScript', 'Python']}
-		/>
 		<ExperienceElement
 			position="Junior Software Engineer"
 			company="Profirent Kft."

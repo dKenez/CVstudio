@@ -11,13 +11,30 @@
 	export let description: string[];
 	export let stack: string[] = [];
 	export let note: string = '';
+	// When set, the logo is rendered white on a rounded tile of this color
+	// (for monochrome icon logos) instead of as a plain image.
+	export let logoBg: string = '';
 </script>
 
 <div class="flex gap-6 items-center">
-	<img src={logo} alt={`${position} - ${company}`} class="aspect-square h-14" />
+	{#if logoBg}
+		<div
+			class="aspect-square h-14 rounded-md shrink-0 flex items-center justify-center"
+			style="background-color: {logoBg};"
+			role="img"
+			aria-label={`${position} - ${company}`}
+		>
+			<div
+				class="w-10 h-10"
+				style="background-color: white; -webkit-mask: url({logo}) center / contain no-repeat; mask: url({logo}) center / contain no-repeat;"
+			></div>
+		</div>
+	{:else}
+		<img src={logo} alt={`${position} - ${company}`} class="aspect-square h-14" />
+	{/if}
 	<div>
 		<div class="flex gap-4">
-			<p class="font-bold text-xs text-zinc-500">{startDate}{endDate ? ` - ${endDate}` : ''}</p>
+			<p class="font-bold text-xs text-zinc-500">{startDate}{endDate ? ` — ${endDate}` : ''}</p>
 			<p class="italic text-xs text-zinc-500">{city}{country ? `, ${country}` : ''}</p>
 		</div>
 		<div class="flex items-baseline gap-2">

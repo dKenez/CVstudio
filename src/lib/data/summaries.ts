@@ -12,11 +12,12 @@ export type SummaryVariant = 'default' | 'alipes';
 // Base text. Spaced em dashes (` — `), single spaces throughout.
 const DEFAULT_SUMMARY =
 	'Machine Learning Engineer working the production side of the stack — dataset ' +
-	'generation, training, deployment, monitoring. Currently building LLM pipelines at ' +
-	'Numerator that turn large volumes of unstructured images and text into structured ' +
-	'data products at scale, on AWS with Python, Kubernetes, Terraform, and Snowflake. ' +
-	'Background in Computer Vision, Deep Learning, and LLMs — and the MLOps that gets ' +
-	'them into production.';
+	'generation, feature engineering, training, deployment, and monitoring. Currently ' +
+	'building LLM pipelines at Numerator that turn large volumes of unstructured images ' +
+	'and text into structured data products at scale, on AWS with Python, Kubernetes, ' +
+	'Terraform, and Snowflake. Background in Computer Vision, Deep Learning, and LLMs — ' +
+	'and the MLOps that gets them into production. The same experience is used to run a two-site ' +
+	'personal homelab.';
 
 export const summaries: Record<SummaryVariant, string> = {
 	default: DEFAULT_SUMMARY,
