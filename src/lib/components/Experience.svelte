@@ -32,9 +32,9 @@
 				'Python',
 				'SQL',
 				'AWS',
-				'Snowflake',
 				'Transformers',
 				'LLMs',
+				'RAG',
 				'Terraform',
 				'Kubernetes',
 				'CI/CD'

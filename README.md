@@ -35,4 +35,18 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
+## Rendering the PDF
+
+```bash
+npm run pdf                    # -> static/KKD_CV_<yyyymmmdd>.pdf
+npm run pdf -- --out foo.pdf   # custom path
+```
+
+This boots a throwaway dev server and prints the standalone `/page_1` and `/page_2`
+routes through headless Chrome, then merges them. After regenerating, point the
+download button in `src/routes/+page.svelte` at the new filename.
+
+Puppeteer's Chrome download is blocked by this repo's install-script policy, so after
+a fresh `npm install` run `npm run pdf:setup` once to fetch it.
+
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

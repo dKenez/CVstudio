@@ -5,10 +5,21 @@
 /* Disable ligature glyph substitution so the PDF text layer copies correctly.
    Without this, "fl" in e.g. "drexler" / "gmail" collapses into a single ligature
    glyph that the Acrobat/browser text extractor cannot map back to individual letters. */
+/* Without this the paper defaults to the browser's locale size (Letter in Chrome),
+   which is shorter than the 297mm .page box and spills each page onto a second sheet. */
+@page {
+	size: A4;
+	margin: 0;
+}
+
 @media print {
 	* {
 		font-variant-ligatures: none;
-		-webkit-font-feature-settings: 'liga' 0, 'clig' 0;
-		font-feature-settings: 'liga' 0, 'clig' 0;
+		-webkit-font-feature-settings:
+			'liga' 0,
+			'clig' 0;
+		font-feature-settings:
+			'liga' 0,
+			'clig' 0;
 	}
 }

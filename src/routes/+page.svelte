@@ -14,7 +14,7 @@
 	}
 
 	function downloadPDF() {
-		const pdfUrl = '/KKD_CV_2026jul30.pdf'; // Path to your PDF file in the public directory
+		const pdfUrl = '/KKD_CV_2026aug13.pdf'; // Path to your PDF file in the public directory
 		const link = document.createElement('a');
 		link.href = pdfUrl;
 		link.download = 'kristof_drexler_resume.pdf'; // Name for the downloaded file

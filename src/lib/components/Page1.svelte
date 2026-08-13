@@ -30,6 +30,9 @@
 		height: 297mm;
 		display: flex;
 		flex-direction: column;
+		/* A sheet is a hard boundary. Without this the trailing margin below the last
+		   section counts as overflow and Chrome emits an extra blank sheet when printing. */
+		overflow: hidden;
 	}
 
 	.page.preview {
